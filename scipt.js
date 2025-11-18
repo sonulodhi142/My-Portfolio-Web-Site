@@ -229,3 +229,11 @@ function ReadLess(id) {
     document.getElementById('hide-' + id).style.display = 'none';
     
 }
+
+
+document.getElementById("downloadBtn").addEventListener("click", function () {
+    const link = document.createElement("a");
+    link.href = "./image/sonulodhi.pdf"; 
+    link.download = "sonulodhi.pdf";   
+    link.click();
+});
